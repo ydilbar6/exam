@@ -1,0 +1,109 @@
+@import './variable';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: $main-color;
+    // background-color: $bc-color-2;
+}
+h1 {
+    font-family: 'Bitter', serif;
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container_1 {
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.p-above {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    // color: $secondary-color;
+}
+
+.p-middle {
+    font-size: 1.1em;
+    // color: $secondary-color;
+}
+
+.p-bottom {
+    font-size: 0.9em;
+    // color: $secondary-color;
+}
+
+.p-main {
+    // color: $primary-color;
+}
+
+.h1-prime {
+    // color: $primary-color;
+    font-size: 4.2em;
+    text-align: center;
+}
+
+.h3-prime {
+    // color: $primary-color;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+
+.h1-secondary {
+    // color: $primary-color;
+    font-size: 2.1em;   
+}
+
+@mixin h2-prime {
+    text-transform: uppercase;
+    // color: $secondary-color;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+@mixin btn {
+    width: 200px;
+    // display: inline-block;
+    background-color: $btn-color;
+    color: #fff;
+    border: 2px solid $btn-color;
+    padding: 15px 30px;
+    @include tr-ease;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: transparent;
+        color: $btn-color;
+    }
+}
+
+@mixin tr-ease {
+    transition: 0.3s ease;
+}
+
+@mixin h1-secondary {
+    font-weight: 600;
+    font-size: 2.75em;
+}
+
